@@ -14,7 +14,7 @@ const swiper = new Swiper(".mySwiper", {
     autoplay: {
         delay: 5000,
         stopOnLastSlide: false,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
     },
     navigation: {
         nextEl: ".banner-slider .swiper-button-next",
