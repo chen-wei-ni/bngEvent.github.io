@@ -49,7 +49,7 @@ $backgroundBlack: #0e0e0e
                     padding: 0
                     list-style: disc
                     font-size: 1.5rem
-                    margin-bottom: 10px
+                    margin-bottom: 1rem
                     &.prize
                         p
                             font-size: 4.5rem
@@ -254,12 +254,12 @@ $backgroundBlack: #0e0e0e
     .swiper
         &-slide
             .info
-                top: 100px
+                top: 90px
                 ul
                     li
                         &.prize
                             p
-                                font-size: 4rem
+                                font-size: 3.8rem
                 a
                     width: 225px
                     padding: 10px 0
@@ -271,11 +271,12 @@ $backgroundBlack: #0e0e0e
         &-slide
             .info
                 top: 80px
-                left: calc( (100% - 1100px)/2)
+                left: calc( (100% - 1000px)/2)
                 h1
                     font-size: 2rem
                 ul
                     li
+                        margin-bottom: .8rem
                         font-size: 1.2rem
                         &.prize
                             p
@@ -284,26 +285,33 @@ $backgroundBlack: #0e0e0e
                             p
                                 font-size: 1.8rem
                 a
+                    width: 200px
                     font-size: 1.2rem
-                    width: 280px
-                    padding: 5px 0
-                    margin: 0
+                    margin-left: 30px
             .event-icon
                 width: 100px
 
     .pageMove
-        top: 82%
-        left: calc( (100% - 1100px)/2)
+        width: 280px
+        top: 84%
+        left: calc( (100% - 1000px)/2)
         .swiper-pagination
-            font-size: 2rem
+            font-size: 1.8rem
             span
                 &:nth-child(2)
-                    font-size: 2.2rem
+                    font-size: 2rem
                     color: $mainGreen
                 &:nth-child(3)
-                    font-size: 1.5rem
+                    font-size: 1.2rem
         &.guide
-            left: calc( (100% - 1000px)/2)
+            left: calc( (100% - 950px)/2)
+        .pageMovePos
+            .frame
+                +size(auto)
+            .swiper-button-prev,.swiper-button-next
+                +size(70px,35px)
+                &::after
+                    +size(20px)
     .guide-part
         height: 600px
         .guideSwiper
@@ -321,7 +329,7 @@ $backgroundBlack: #0e0e0e
 @media screen and ( max-width: 1024px )
     .pageMove
         &.guide
-            left: 5%
+            left: 10%
     .guide-part
         .guideSwiper
             h1
@@ -338,24 +346,24 @@ $backgroundBlack: #0e0e0e
     .swiper
         &-slide
             .info
-                top: 88px
+                top: 75px
                 left: 5%
                 h1
                     font-size: 1.8rem
+                    margin-bottom: 5px
                 ul
                     li
-                        font-size: 1.2rem
-                        margin-bottom: 5px
+                        margin-bottom: .5rem
+                        font-size: 1rem
                         &.prize
                             p
-                                font-size: 2.4rem
+                                font-size: 2.8rem
                         &.date
                             p
                                 font-size: 1.6rem
                 a
-                    width: 250px
+                    width: 170px
                     font-size: 1rem
-                    padding: 8px 0
             .background
                 position: absolute
                 left: -15%
@@ -379,13 +387,19 @@ $backgroundBlack: #0e0e0e
                             figure
                                 width: 300px
     .pageMove
-        width: 350px
+        width: 250px
         left: 5%
+        .swiper-pagination
+            font-size: 1.6rem
+            span
+                &:nth-child(2)
+                    font-size: 1.8rem
         .pageMovePos
-            .frame
-                +size(80px,30px)
-            .swiper-button-next,.swiper-button-prev
-                padding: 2px 0
+            .swiper-button-prev,.swiper-button-next
+                +size(60px,32px)
+        &.guide
+            left: 8%
+
 @media screen and ( min-width: 768px )
     .banner-slider-mb
         display: none
@@ -407,7 +421,7 @@ $backgroundBlack: #0e0e0e
                     flex-direction: column
                     h1
                         font-size: 1.8rem
-                        margin-bottom: 12px
+                        margin-bottom: 10px
                     ul
                         padding-left: 0
                         li
@@ -426,6 +440,7 @@ $backgroundBlack: #0e0e0e
                     a
                         width: 200px
                         padding: 10px 0
+                        margin: 0 auto
                 .event-icon
                     display: flex
                     align-items: center
@@ -462,7 +477,6 @@ $backgroundBlack: #0e0e0e
                     background-color: transparent
             .pageMovePos
                 .frame
-                    +size(40px)
                 .swiper-button-prev,.swiper-button-next
                     +size(100%)
                     padding: 0
@@ -470,9 +484,11 @@ $backgroundBlack: #0e0e0e
                     background-color: transparent
                 .swiper-button-prev
                     &::after
+                        +size(35px)
                         background: url("../images/icon/arrow4.svg") center no-repeat
                 .swiper-button-next
                     &::after
+                        +size(35px)
                         background: url("../images/icon/arrow5.svg") center no-repeat
     // -- guide section
     .guide-part
@@ -504,3 +520,63 @@ $backgroundBlack: #0e0e0e
                                     font-size: 14px
                         .phone-picture
                             justify-content: center
+@media screen and ( max-width: 320px )
+    .banner-slider-mb
+        .swiper
+            &-slide
+                .info
+                    h1
+                        font-size: 1.2rem
+                        margin-bottom: 5px
+                    ul
+                        li
+                            list-style: none
+                            font-size: 0.9rem
+                            margin-bottom: 5px
+                            &.prize
+                                p
+                                    font-size: 2rem
+                            &.date
+                                p
+                                    font-size: 1rem
+                                    line-height: 1
+                    a
+                        width: 150px
+                        font-size: 0.9rem
+                        padding: 5px 0
+                        margin: 0 auto
+                .event-icon
+                    +size(65px)
+                    figure
+                        +size(50px)
+                        margin-left: 0px
+    .pageMove
+        .swiper-pagination
+            span
+                width: 30px
+        &.guide
+            .swiper-pagination
+                top: 200px
+    // -- guide section
+    .guide-part
+        height: 620px
+        .guideSwiper
+            h1
+                font-size: 1.2rem
+
+            .swiper-wrapper
+                .swiper-slide
+                    .guide-content
+                        padding: 5%
+                        .text-part
+                            p
+                                &.notice
+                                    font-size: 12px
+                            h2
+                                font-size: 1rem
+                            p
+                                font-size: 0.95rem
+                        .phone-picture
+                            justify-content: center
+                            figure
+                                width: 200px

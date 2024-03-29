@@ -11,11 +11,11 @@ const swiper = new Swiper(".mySwiper", {
         },
     },
     loop: true,
-    autoplay: {
-        delay: 5000,
-        stopOnLastSlide: false,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    //     stopOnLastSlide: false,
+    //     disableOnInteraction: false,
+    // },
     navigation: {
         nextEl: ".banner-slider .swiper-button-next",
         prevEl: ".banner-slider .swiper-button-prev",

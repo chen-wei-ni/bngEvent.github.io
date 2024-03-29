@@ -46,7 +46,7 @@
   padding: 0;
   list-style: disc;
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .swiper-slide .info ul li.prize p {
   font-size: 4.5rem;
@@ -283,10 +283,10 @@
 
 @media screen and (max-width: 1500px) {
   .swiper-slide .info {
-    top: 100px;
+    top: 90px;
   }
   .swiper-slide .info ul li.prize p {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
   .swiper-slide .info a {
     width: 225px;
@@ -300,12 +300,13 @@
   }
   .swiper-slide .info {
     top: 80px;
-    left: calc((100% - 1100px) / 2);
+    left: calc((100% - 1000px) / 2);
   }
   .swiper-slide .info h1 {
     font-size: 2rem;
   }
   .swiper-slide .info ul li {
+    margin-bottom: 0.8rem;
     font-size: 1.2rem;
   }
   .swiper-slide .info ul li.prize p {
@@ -315,30 +316,42 @@
     font-size: 1.8rem;
   }
   .swiper-slide .info a {
+    width: 200px;
     font-size: 1.2rem;
-    width: 280px;
-    padding: 5px 0;
-    margin: 0;
+    margin-left: 30px;
   }
   .swiper-slide .event-icon {
     width: 100px;
   }
   .pageMove {
-    top: 82%;
-    left: calc((100% - 1100px) / 2);
+    width: 280px;
+    top: 84%;
+    left: calc((100% - 1000px) / 2);
   }
   .pageMove .swiper-pagination {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .pageMove .swiper-pagination span:nth-child(2) {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #00ffc7;
   }
   .pageMove .swiper-pagination span:nth-child(3) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .pageMove.guide {
-    left: calc((100% - 1000px) / 2);
+    left: calc((100% - 950px) / 2);
+  }
+  .pageMove .pageMovePos .frame {
+    width: auto;
+    height: auto;
+  }
+  .pageMove .pageMovePos .swiper-button-prev, .pageMove .pageMovePos .swiper-button-next {
+    width: 70px;
+    height: 35px;
+  }
+  .pageMove .pageMovePos .swiper-button-prev::after, .pageMove .pageMovePos .swiper-button-next::after {
+    width: 20px;
+    height: 20px;
   }
   .guide-part {
     height: 600px;
@@ -357,7 +370,7 @@
 }
 @media screen and (max-width: 1024px) {
   .pageMove.guide {
-    left: 5%;
+    left: 10%;
   }
   .guide-part .guideSwiper h1 {
     left: 5%;
@@ -372,26 +385,26 @@
     height: 420px;
   }
   .swiper-slide .info {
-    top: 88px;
+    top: 75px;
     left: 5%;
   }
   .swiper-slide .info h1 {
     font-size: 1.8rem;
-  }
-  .swiper-slide .info ul li {
-    font-size: 1.2rem;
     margin-bottom: 5px;
   }
+  .swiper-slide .info ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
   .swiper-slide .info ul li.prize p {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
   .swiper-slide .info ul li.date p {
     font-size: 1.6rem;
   }
   .swiper-slide .info a {
-    width: 250px;
+    width: 170px;
     font-size: 1rem;
-    padding: 8px 0;
   }
   .swiper-slide .background {
     position: absolute;
@@ -416,15 +429,21 @@
     width: 300px;
   }
   .pageMove {
-    width: 350px;
+    width: 250px;
     left: 5%;
   }
-  .pageMove .pageMovePos .frame {
-    width: 80px;
-    height: 30px;
+  .pageMove .swiper-pagination {
+    font-size: 1.6rem;
   }
-  .pageMove .pageMovePos .swiper-button-next, .pageMove .pageMovePos .swiper-button-prev {
-    padding: 2px 0;
+  .pageMove .swiper-pagination span:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  .pageMove .pageMovePos .swiper-button-prev, .pageMove .pageMovePos .swiper-button-next {
+    width: 60px;
+    height: 32px;
+  }
+  .pageMove.guide {
+    left: 8%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -450,7 +469,7 @@
   }
   .banner-slider-mb .swiper-slide .info h1 {
     font-size: 1.8rem;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
   .banner-slider-mb .swiper-slide .info ul {
     padding-left: 0;
@@ -472,6 +491,7 @@
   .banner-slider-mb .swiper-slide .info a {
     width: 200px;
     padding: 10px 0;
+    margin: 0 auto;
   }
   .banner-slider-mb .swiper-slide .event-icon {
     display: flex;
@@ -518,10 +538,6 @@
   .pageMove.guide .swiper-pagination span {
     background-color: transparent;
   }
-  .pageMove.guide .pageMovePos .frame {
-    width: 40px;
-    height: 40px;
-  }
   .pageMove.guide .pageMovePos .swiper-button-prev, .pageMove.guide .pageMovePos .swiper-button-next {
     width: 100%;
     height: 100%;
@@ -530,9 +546,13 @@
     background-color: transparent;
   }
   .pageMove.guide .pageMovePos .swiper-button-prev::after {
+    width: 35px;
+    height: 35px;
     background: url("../images/icon/arrow4.svg") center no-repeat;
   }
   .pageMove.guide .pageMovePos .swiper-button-next::after {
+    width: 35px;
+    height: 35px;
     background: url("../images/icon/arrow5.svg") center no-repeat;
   }
   .guide-part {
@@ -566,5 +586,68 @@
   }
   .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content .phone-picture {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .banner-slider-mb .swiper-slide .info h1 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  .banner-slider-mb .swiper-slide .info ul li {
+    list-style: none;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  .banner-slider-mb .swiper-slide .info ul li.prize p {
+    font-size: 2rem;
+  }
+  .banner-slider-mb .swiper-slide .info ul li.date p {
+    font-size: 1rem;
+    line-height: 1;
+  }
+  .banner-slider-mb .swiper-slide .info a {
+    width: 150px;
+    font-size: 0.9rem;
+    padding: 5px 0;
+    margin: 0 auto;
+  }
+  .banner-slider-mb .swiper-slide .event-icon {
+    width: 65px;
+    height: 65px;
+  }
+  .banner-slider-mb .swiper-slide .event-icon figure {
+    width: 50px;
+    height: 50px;
+    margin-left: 0px;
+  }
+  .pageMove .swiper-pagination span {
+    width: 30px;
+  }
+  .pageMove.guide .swiper-pagination {
+    top: 200px;
+  }
+  .guide-part {
+    height: 620px;
+  }
+  .guide-part .guideSwiper h1 {
+    font-size: 1.2rem;
+  }
+  .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content {
+    padding: 5%;
+  }
+  .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content .text-part p.notice {
+    font-size: 12px;
+  }
+  .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content .text-part h2 {
+    font-size: 1rem;
+  }
+  .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content .text-part p {
+    font-size: 0.95rem;
+  }
+  .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content .phone-picture {
+    justify-content: center;
+  }
+  .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content .phone-picture figure {
+    width: 200px;
   }
 }/*# sourceMappingURL=index.css.map */

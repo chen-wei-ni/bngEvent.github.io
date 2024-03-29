@@ -422,6 +422,15 @@ footer
     footer
         .logo
             width: 100px
+        .contact-information
+            .footer-nav
+                ul
+                    grid-template-columns: repeat(2, max-content)
+                    li
+                        &:nth-child(even)
+                            &::after
+                                display: none
+
 @media screen and ( min-width: 768px )
     header .switch-lang-list-mb,
     .switch-lang-list-mb,
