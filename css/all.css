@@ -352,12 +352,12 @@ footer .contact-information .footer-nav ul li:hover {
   header nav .menu-mb-icon::before {
     content: "";
     position: absolute;
-    right: 38px;
+    right: 42px;
     display: block;
     width: 20px;
     height: 20px;
     transform: rotate(-90deg);
-    background: url("../images/icon/lang_arrow.svg") center no-repeat;
+    background: url("../images/icon/lang_arrow-mb.svg") center no-repeat;
     transition: transform 0.2s;
   }
   header nav.openMenu {
@@ -416,10 +416,14 @@ footer .contact-information .footer-nav ul li:hover {
     padding: 0;
   }
   header nav ul.lang-area .switch-lang-list ul li {
+    text-align: center;
+    width: 100%;
     display: none;
     margin: 0;
   }
   header nav ul.lang-area .switch-lang-list ul li a {
+    width: 100%;
+    display: block;
     font-size: 1rem;
     font-weight: 600;
     color: #dcdbdb;

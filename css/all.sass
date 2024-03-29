@@ -294,11 +294,11 @@ footer
                 &::before
                     content: ""
                     position: absolute
-                    right: 38px
+                    right: 42px
                     display: block
                     +size(20px)
                     transform: rotate(-90deg)
-                    background: url("../images/icon/lang_arrow.svg") center no-repeat
+                    background: url("../images/icon/lang_arrow-mb.svg") center no-repeat
                     transition: transform .2s
             &.openMenu
                 overflow: initial
@@ -342,9 +342,13 @@ footer
                         transition: opacity .5s .2s
                         padding: 0
                         li
+                            text-align: center
+                            width: 100%
                             display: none
                             margin: 0
                             a
+                                width: 100%
+                                display: block
                                 font-size: 1rem
                                 font-weight: 600
                                 color: #dcdbdb
