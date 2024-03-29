@@ -34,6 +34,18 @@
 .swiper-slide .info.playson a:hover {
   background-color: #ff4848;
 }
+.swiper-slide .info.playson h1 {
+  display: flex;
+}
+.swiper-slide .info.playson h1 span {
+  width: 250px;
+  display: inline-block;
+}
+.swiper-slide .info.playson h1 span img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
 .swiper-slide .info h1 {
   font-size: 2.5rem;
   font-weight: 500;
