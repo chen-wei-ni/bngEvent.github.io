@@ -30,7 +30,7 @@ function headerStick() {
 
 
 
-// lang switch
+// lang switch-pc
 let list = document.querySelector(".switch-lang-list ul");
 function switchLang() {
     const langSwitchTop = document.querySelector(".lang-arrow");
@@ -43,21 +43,16 @@ function switchLang() {
 }
 switchLang();
 
-// mobile menu
-// let menu = document.querySelector("nav");
-// function menuShow() {
-//     let btn = document.querySelector(" nav .menu-mb-icon");
-//     btn.addEventListener("click", function () {
-//         menu.classList.toggle("openMenu");
-//         if (menu.classList.length == 1) {
-//             lenis.stop();
-//         } else {
-//             lenis.start();
-//         }
-//     });
-//     lenis.start();
-// }
-// menuShow();
+// mobile menu- mobile
+let menu = document.querySelector("nav");
+function menuShow() {
+    let btn = document.querySelector(" nav .menu-mb-icon");
+    btn.addEventListener("click", function () {
+        menu.classList.toggle("openMenu");
+    });
+}
+menuShow();
+
 
 // footer資料顯現
 function footerShow() {

@@ -10,6 +10,12 @@ const swiper = new Swiper(".mySwiper", {
                  <span>0</span><span class="${totalClass}"></span>`;
         },
     },
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+    },
     navigation: {
         nextEl: ".banner-slider .swiper-button-next",
         prevEl: ".banner-slider .swiper-button-prev",
@@ -18,10 +24,13 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 const swiperMb = new Swiper(" .mySwiper-mb", {
-    // speed: 1500,
+    speed: 1000,
     effect: "fade",
     allowTouchMove: true,
-
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
     pagination: {
         el: ".banner-slider-mb .swiper-pagination",
         clickable: true,
