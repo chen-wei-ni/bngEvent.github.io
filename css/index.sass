@@ -40,24 +40,24 @@ $backgroundBlack: #0e0e0e
                     &:hover
                         background-color: #ff4848
                 h1
-                    display: flex
                     span
-                        width: 250px
-                        display: inline-block
-                        img
-                            display: inline-block
-                            +size(100%,auto)
+                        color: #ff4848
             h1
                 font-size: 2.5rem
                 font-weight: 500
                 color: #fff
+                span
+                    color: $mainGreen
+                    font-size: 3.2rem
+                    font-weight: bold
+                    margin-right: 10px
             ul
                 padding-left: 1.5rem
                 li
                     padding: 0
                     list-style: disc
                     font-size: 1.5rem
-                    margin-bottom: 1rem
+                    margin-bottom: 5px
                     &.prize
                         p
                             font-size: 4.5rem
@@ -77,7 +77,7 @@ $backgroundBlack: #0e0e0e
                 font-size: 1.5rem
                 text-align: center
                 padding: 15px 0
-                margin: 25px auto 25px auto
+                margin: 20px 0 25px 10px
                 transition: background-color 0.3s,color 0.3s
                 &:hover
                     background-color: $mainGreen
@@ -271,7 +271,7 @@ $backgroundBlack: #0e0e0e
                 a
                     width: 225px
                     padding: 10px 0
-                    margin: 15px auto 25px auto
+                    margin: 10px 0px 25px 20px
 @media screen and ( max-width: 1250px )
     .banner-slider
         min-width: 1250px
@@ -282,6 +282,8 @@ $backgroundBlack: #0e0e0e
                 left: calc( (100% - 1000px)/2)
                 h1
                     font-size: 2rem
+                    span
+                        font-size: 2.5rem
                 ul
                     li
                         margin-bottom: .8rem
