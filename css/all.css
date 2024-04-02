@@ -69,27 +69,32 @@ header .logo {
   margin: 12px;
   flex-shrink: 0;
 }
+header nav {
+  display: flex;
+  align-items: center;
+}
 header nav ul {
   display: flex;
 }
 header nav ul li {
-  margin: 0 18px;
+  margin: 0 10px;
 }
-header nav ul li.pc-lang {
+header nav ul li.lang {
   display: flex;
   align-items: center;
 }
-header nav ul li.pc-lang .lang-arrow {
+header nav ul li.lang .lang-arrow {
   width: 25px;
   cursor: pointer;
   transition: transform 0.2s;
 }
-header nav ul li.pc-lang .lang-arrow.rotateUp {
+header nav ul li.lang .lang-arrow.rotateUp {
   transform: rotate(180deg);
 }
-header nav ul li.pc-lang .flag {
+header nav .menu-mb-icon span {
+  display: block;
   width: 35px;
-  margin-left: 10px;
+  margin-right: 20px;
 }
 header .switch-lang-list {
   display: flex;
@@ -134,7 +139,7 @@ header .switch-lang-list ul li a {
   transition: color 0.2s;
 }
 header .switch-lang-list ul li a.selected {
-  color: #00ffc7;
+  color: #00ffc7 !important;
 }
 
 footer {
@@ -395,14 +400,14 @@ footer .contact-information .footer-nav ul li:hover {
     right: 25px;
     transition: background-color 0.5s, width 0.5s 0.1s, height 0.5s 0.1s;
   }
-  header nav ul.lang-area li.pc-lang {
+  header nav ul.lang-area li.lang {
     width: 100%;
     height: 100%;
   }
-  header nav ul.lang-area li.pc-lang .lang-arrow {
+  header nav ul.lang-area li.lang .lang-arrow {
     display: none;
   }
-  header nav ul.lang-area li.pc-lang .flag {
+  header nav ul.lang-area li.lang .flag {
     display: none;
   }
   header nav ul.lang-area .switch-lang-list {
@@ -531,7 +536,7 @@ footer .contact-information .footer-nav ul li:hover {
   header nav ul li .mb-lang,
   footer .footer-info .logo-links-mb .footer-sns,
   footer .footer-info .mb,
-  .footer-nav.mb, .menu-mb-icon {
+  .footer-nav.mb {
     display: none !important;
   }
 }/*# sourceMappingURL=all.css.map */

@@ -64,11 +64,13 @@ header
         margin: 12px
         flex-shrink: 0
     nav
+        display: flex
+        align-items: center
         ul
             display: flex
             li
-                margin: 0 18px
-                &.pc-lang
+                margin: 0 10px
+                &.lang
                     display: flex
                     align-items: center
                     .lang-arrow
@@ -77,9 +79,11 @@ header
                         transition: transform .2s
                         &.rotateUp
                             transform: rotate(180deg)
-                    .flag
-                        width: 35px
-                        margin-left: 10px
+        .menu-mb-icon
+            span
+                display: block
+                width: 35px
+                margin-right: 20px
 
     .switch-lang-list
         display: flex
@@ -117,7 +121,7 @@ header
                     font-size: 14px
                     transition: color 0.2s
                     &.selected
-                        color: $mainGreen
+                        color: $mainGreen !important
 
 footer
     display: grid
@@ -327,7 +331,7 @@ footer
                 right: 25px
                 transition: background-color .5s,width .5s .1s, height .5s .1s
                 li
-                    &.pc-lang
+                    &.lang
                         +size(100%)
                         .lang-arrow
                             display: none
@@ -437,5 +441,5 @@ footer
     header nav ul li .mb-lang,
     footer .footer-info .logo-links-mb .footer-sns ,
     footer .footer-info .mb,
-    .footer-nav.mb,.menu-mb-icon
+    .footer-nav.mb
         display: none !important
