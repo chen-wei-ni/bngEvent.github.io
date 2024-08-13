@@ -72,17 +72,17 @@ $backgroundBlack: #0e0e0e
             a
                 border: solid 2px $mainGreen
                 border-radius: 100vmax
-                width: 250px
+                // width: 250px
                 display: block
                 font-size: 1.5rem
                 text-align: center
-                padding: 15px 0
+                padding: 15px
                 margin: 20px 0 25px 10px
                 transition: background-color 0.3s,color 0.3s
                 &:hover
                     background-color: $mainGreen
                     color: $backgroundBlack
-                    font-weight: 800
+                    font-weight: 500
                 span
                     display: inline-block
                     margin-left: 10px
@@ -234,7 +234,9 @@ $backgroundBlack: #0e0e0e
                             line-height: 1.5
                             font-size: 1rem
                             margin: 5px 0
+
                             &.notice
+
                                 line-height: 1.8
                                 font-size: 0.95rem
                                 color: $mainGreen
@@ -258,7 +260,7 @@ $backgroundBlack: #0e0e0e
                             transform: translateY(0)
                             transition: transform .5s , opacity 1s
 
-@media screen and ( max-width: 1500px )
+@media screen and ( max-width: 1600px )
     .swiper
         &-slide
             .info
@@ -269,8 +271,8 @@ $backgroundBlack: #0e0e0e
                             p
                                 font-size: 3.8rem
                 a
-                    width: 225px
-                    padding: 10px 0
+                    // width: 225px
+                    // padding: 10px 0
                     margin: 10px 0px 25px 20px
 @media screen and ( max-width: 1250px )
     .banner-slider
@@ -286,7 +288,7 @@ $backgroundBlack: #0e0e0e
                         font-size: 2.5rem
                 ul
                     li
-                        margin-bottom: .8rem
+                        margin-bottom: .5rem
                         font-size: 1.2rem
                         &.prize
                             p
@@ -295,9 +297,12 @@ $backgroundBlack: #0e0e0e
                             p
                                 font-size: 1.8rem
                 a
-                    width: 200px
+                    // width: 200px
+                    padding: 0.8rem 1rem
                     font-size: 1.2rem
-                    margin-left: 30px
+                    // margin-left: 30px
+                    span
+                        margin-left: 5px
             .event-icon
                 width: 100px
 
@@ -323,7 +328,7 @@ $backgroundBlack: #0e0e0e
                 &::after
                     +size(20px)
     .guide-part
-        height: 600px
+        // height: 600px
         .guideSwiper
             h1
                 left: calc( (100% - 960px)/2)
@@ -332,7 +337,8 @@ $backgroundBlack: #0e0e0e
                 .swiper-slide
                     .guide-content
                         width: 960px
-                        padding: 0 2.5%
+                        .text-part
+                            margin-top: 30px
                         .phone-picture
                             figure
                                 width: 350px
@@ -372,7 +378,7 @@ $backgroundBlack: #0e0e0e
                             p
                                 font-size: 1.6rem
                 a
-                    width: 170px
+                    // width: 170px
                     font-size: 1rem
             .background
                 position: absolute
@@ -382,7 +388,7 @@ $backgroundBlack: #0e0e0e
                 top: 60px
                 right: 38%
     .guide-part
-        height: 560px
+        height: 650px
         .guideSwiper
             h1
                 width: 700px
@@ -391,6 +397,7 @@ $backgroundBlack: #0e0e0e
                 .swiper-slide
                     .guide-content
                         .text-part
+                            // height: calc( 100% - 220px )
                             h2
                                 font-size: 1.5rem
                         .phone-picture
@@ -421,6 +428,7 @@ $backgroundBlack: #0e0e0e
     .banner-slider-mb
         .swiper
             &-slide
+                height: auto
                 .info
                     top: 55px
                     left: initial
@@ -468,8 +476,8 @@ $backgroundBlack: #0e0e0e
                     left: initial
     .pageMove
         width: 100%
-        left: initial
         top: 90%
+        left: 0
         .swiper-pagination
             width: 100%
             span
@@ -477,16 +485,22 @@ $backgroundBlack: #0e0e0e
                 width: 40px
                 border-radius: 100vmax
         &.guide
+            position: initial
             left: initial
             top: 55%
             padding: 0 2.5%
             .swiper-pagination
                 position: absolute
-                top: 280px
+                bottom: 1%
                 span
                     background-color: transparent
             .pageMovePos
+                height: 35px
                 .frame
+                    position: absolute
+                    bottom: 35%
+                    &.right-arrow
+                        right: 0
                 .swiper-button-prev,.swiper-button-next
                     +size(100%)
                     padding: 0
@@ -502,16 +516,18 @@ $backgroundBlack: #0e0e0e
                         background: url("../images/icon/arrow5.svg") center no-repeat
     // -- guide section
     .guide-part
-        height: 820px
+        height: 100%
         background-size: cover
         .guideSwiper
             h1
+                position: initial
                 font-size: 2rem
                 letter-spacing: 0px
                 width: 100%
-                left: initial
+                margin: 20px 0 5px 0
+                // top: 40px
+                // left: initial
                 max-width: initial
-                top: 40px
                 text-align: center
                 &::after
                     background: $wordGray
@@ -520,9 +536,10 @@ $backgroundBlack: #0e0e0e
             .swiper-wrapper
                 .swiper-slide
                     .guide-content
-                        padding: 5%
+                        // padding: 5%
                         grid-template-columns: 1fr
                         .text-part
+                            height: initial
                             margin-top: 0px
                             text-align: center
                             p
@@ -564,16 +581,12 @@ $backgroundBlack: #0e0e0e
         .swiper-pagination
             span
                 width: 30px
-        &.guide
-            .swiper-pagination
-                top: 200px
     // -- guide section
     .guide-part
-        height: 620px
+        // height: 620px
         .guideSwiper
             h1
                 font-size: 1.2rem
-
             .swiper-wrapper
                 .swiper-slide
                     .guide-content

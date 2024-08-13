@@ -71,18 +71,17 @@
 .swiper-slide .info a {
   border: solid 2px #00ffc7;
   border-radius: 100vmax;
-  width: 250px;
   display: block;
   font-size: 1.5rem;
   text-align: center;
-  padding: 15px 0;
+  padding: 15px;
   margin: 20px 0 25px 10px;
   transition: background-color 0.3s, color 0.3s;
 }
 .swiper-slide .info a:hover {
   background-color: #00ffc7;
   color: #0e0e0e;
-  font-weight: 800;
+  font-weight: 500;
 }
 .swiper-slide .info a span {
   display: inline-block;
@@ -290,7 +289,7 @@
   transition: transform 0.5s, opacity 1s;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
   .swiper-slide .info {
     top: 90px;
   }
@@ -298,8 +297,6 @@
     font-size: 3.8rem;
   }
   .swiper-slide .info a {
-    width: 225px;
-    padding: 10px 0;
     margin: 10px 0px 25px 20px;
   }
 }
@@ -318,7 +315,7 @@
     font-size: 2.5rem;
   }
   .swiper-slide .info ul li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     font-size: 1.2rem;
   }
   .swiper-slide .info ul li.prize p {
@@ -328,9 +325,11 @@
     font-size: 1.8rem;
   }
   .swiper-slide .info a {
-    width: 200px;
+    padding: 0.8rem 1rem;
     font-size: 1.2rem;
-    margin-left: 30px;
+  }
+  .swiper-slide .info a span {
+    margin-left: 5px;
   }
   .swiper-slide .event-icon {
     width: 100px;
@@ -365,16 +364,15 @@
     width: 20px;
     height: 20px;
   }
-  .guide-part {
-    height: 600px;
-  }
   .guide-part .guideSwiper h1 {
     left: calc((100% - 960px) / 2);
     width: 800px;
   }
   .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content {
     width: 960px;
-    padding: 0 2.5%;
+  }
+  .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content .text-part {
+    margin-top: 30px;
   }
   .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content .phone-picture figure {
     width: 350px;
@@ -415,7 +413,6 @@
     font-size: 1.6rem;
   }
   .swiper-slide .info a {
-    width: 170px;
     font-size: 1rem;
   }
   .swiper-slide .background {
@@ -428,7 +425,7 @@
     right: 38%;
   }
   .guide-part {
-    height: 560px;
+    height: 650px;
   }
   .guide-part .guideSwiper h1 {
     width: 700px;
@@ -469,6 +466,9 @@
   }
   header {
     height: 50px;
+  }
+  .banner-slider-mb .swiper-slide {
+    height: auto;
   }
   .banner-slider-mb .swiper-slide .info {
     top: 55px;
@@ -527,8 +527,8 @@
   }
   .pageMove {
     width: 100%;
-    left: initial;
     top: 90%;
+    left: 0;
   }
   .pageMove .swiper-pagination {
     width: 100%;
@@ -539,16 +539,27 @@
     border-radius: 100vmax;
   }
   .pageMove.guide {
+    position: initial;
     left: initial;
     top: 55%;
     padding: 0 2.5%;
   }
   .pageMove.guide .swiper-pagination {
     position: absolute;
-    top: 280px;
+    bottom: 1%;
   }
   .pageMove.guide .swiper-pagination span {
     background-color: transparent;
+  }
+  .pageMove.guide .pageMovePos {
+    height: 35px;
+  }
+  .pageMove.guide .pageMovePos .frame {
+    position: absolute;
+    bottom: 35%;
+  }
+  .pageMove.guide .pageMovePos .frame.right-arrow {
+    right: 0;
   }
   .pageMove.guide .pageMovePos .swiper-button-prev, .pageMove.guide .pageMovePos .swiper-button-next {
     width: 100%;
@@ -568,16 +579,16 @@
     background: url("../images/icon/arrow5.svg") center no-repeat;
   }
   .guide-part {
-    height: 820px;
+    height: 100%;
     background-size: cover;
   }
   .guide-part .guideSwiper h1 {
+    position: initial;
     font-size: 2rem;
     letter-spacing: 0px;
     width: 100%;
-    left: initial;
+    margin: 20px 0 5px 0;
     max-width: initial;
-    top: 40px;
     text-align: center;
   }
   .guide-part .guideSwiper h1::after {
@@ -586,10 +597,10 @@
     margin: 5px auto 0 auto;
   }
   .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content {
-    padding: 5%;
     grid-template-columns: 1fr;
   }
   .guide-part .guideSwiper .swiper-wrapper .swiper-slide .guide-content .text-part {
+    height: initial;
     margin-top: 0px;
     text-align: center;
   }
@@ -634,12 +645,6 @@
   }
   .pageMove .swiper-pagination span {
     width: 30px;
-  }
-  .pageMove.guide .swiper-pagination {
-    top: 200px;
-  }
-  .guide-part {
-    height: 620px;
   }
   .guide-part .guideSwiper h1 {
     font-size: 1.2rem;
